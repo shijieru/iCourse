@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:background="@drawable/background1">
+  
+  <TextView android:id="@+id/dl_classroom_view"  
+        android:layout_height="wrap_content"  
+        android:layout_marginLeft="20dip"  
+        android:layout_marginRight="20dip" android:text="上课地点"  
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="fill_parent"/>  
+  
+    <EditText android:id="@+id/dl_classroom_edit"  
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent" android:layout_marginLeft="20dip"  
+        android:layout_marginRight="20dip" android:capitalize="none"  
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+  
+    <TextView android:id="@+id/dl_classtime_view"  
+        android:layout_height="wrap_content"  
+        android:layout_marginLeft="20dip"  
+        android:layout_marginRight="20dip" android:text="上课时间"  
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_width="fill_parent"/>
+    <LinearLayout android:id="@+id/dl_LinearLayout_yl01"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center">
+        <Spinner android:id="@+id/dl_ClassDaySpinner" 
+            android:layout_height="wrap_content" 
+            android:layout_width="100dip"/>
+        <TextView 
+            android:text="第"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText android:id="@+id/dl_time_start"
+            android:text="00" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>  
+        <TextView 
+            android:text="至第"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText android:id="@+id/dl_time_end"
+            android:text="00" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:text="节课"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>  
+    </LinearLayout>
+    <LinearLayout android:id="@+id/dl_LinearLayout_yl02"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center">
+        <Spinner android:id="@+id/dl_ClassWeekSpinner" 
+            android:layout_height="wrap_content" 
+            android:layout_width="100dip"/>
+        <TextView 
+            android:text="第"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText android:id="@+id/dl_week_start"
+            android:text="00" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>  
+        <TextView 
+            android:text="周至第"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText android:id="@+id/dl_week_end"
+            android:text="00" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:text="周"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>  
+    </LinearLayout>
+    <LinearLayout android:id="@+id/dl_LinearLayout_yl03" 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center">
+        <Button android:id="@+id/dl_BtnOK"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="100" 
+            android:layout_margin="10dip"
+            android:text="确定"/>
+        <Button android:id="@+id/dl_BtnCancel"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="100" 
+            android:layout_margin="10dip"
+            android:text="取消" />
+        </LinearLayout>
+</LinearLayout>

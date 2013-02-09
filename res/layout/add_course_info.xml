@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background1"
+	>
+    <TextView android:id="@+id/CourseNameView"
+        android:text="课程名称：" 
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentLeft="true"
+        android:layout_margin= "8dip"
+        />
+    <EditText android:id="@+id/editCourseName"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:layout_toRightOf="@id/CourseNameView" 
+        android:layout_marginRight="8dip"/>
+        
+    <TextView android:id="@+id/CourseTeacherView"  
+        android:text="授课教师："
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/editCourseName" 
+        android:layout_width="wrap_content" 
+        android:layout_alignLeft="@id/CourseNameView"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        />
+    <EditText android:id="@+id/editCourseTeacher" 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:layout_toRightOf="@id/CourseTeacherView" 
+        android:layout_below="@id/editCourseName" 
+        android:layout_marginRight="8dip"/>
+        
+    <TextView android:id="@+id/CourseSemesterView"  
+        android:text="上课学期："
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/editCourseTeacher" 
+        android:layout_width="wrap_content" 
+        android:layout_alignLeft="@id/CourseTeacherView"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="8dip"
+        />
+     <Spinner android:id="@+id/selectCourseSemester" 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:layout_toRightOf="@id/CourseSemesterView" 
+        android:layout_marginRight="8dip"
+        android:layout_below="@id/editCourseTeacher" />
+
+    <TextView android:id="@+id/CourseInfoView"  
+        android:text="课程信息：（可选）"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/selectCourseSemester" 
+        android:layout_width="wrap_content" 
+        android:layout_alignLeft="@id/CourseSemesterView"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="8dip"
+        />
+
+    <Button android:id="@+id/OkToAddCourse" 
+        android:text="确定" 
+        android:layout_height="wrap_content" 
+        android:layout_width="100dip" 
+        android:layout_alignParentBottom = "true"
+        android:layout_margin = "30dip"
+        android:layout_alignParentLeft ="true"></Button>
+    <Button android:id="@+id/CancelToAddCourse" 
+        android:text="取消" 
+        android:layout_height="wrap_content"
+        android:layout_width="100dip" 
+        android:layout_alignParentBottom = "true"
+        android:layout_margin = "30dip"
+        android:layout_alignParentRight="true"></Button>
+        
+    <ScrollView android:id="@+id/CourseInfoScrollView" 
+        android:layout_width="fill_parent" 
+        android:layout_height= "wrap_content"
+        android:scrollbarStyle="outsideOverlay" 
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@id/CourseInfoView" 
+        android:layout_alignLeft="@id/CourseInfoView"
+        android:layout_margin="8dip"
+        android:layout_above="@id/OkToAddCourse"
+        > 
+    <EditText android:id="@+id/editCourseInfo" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent" 
+        />
+	</ScrollView>
+	
+	</RelativeLayout>
+

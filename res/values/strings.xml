@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iCourse</string>
+    <string name="t_name">教师姓名</string>
+    <string name="t_gender">教师性别</string>
+    <string name="t_title">教师职称</string>
+    <string name="t_college">教师所属院系</string>
+    <string name="t_phone">教师手机</string>
+    <string name="t_office">教师办公室</string>
+    <string name="t_email">教师邮箱</string>
+    <string name="t_officetime">教师答疑时间</string>
+    <string name="t_ftp">教师FTP信息</string>
+    <string name="man">男</string>
+    <string name="female">女</string>
+    <string name="add_teacher">添加教师</string>
+    <string name="cancel">返回</string>
+    <string name="edit_teacher">编辑教师信息</string>
+    <string name="delete_teacher">删除教师</string>
+    <string name="update_teacher">更新教师信息</string>
+    <string name="list_teacher">教师信息</string>
+    <string name="display_sat">显示学期/作业/教师信息</string>
+    <string name="clear_database">清空数据库</string>
+    <string name="a_name">作业标题</string>
+    <string name="a_info">具体内容</string>
+    <string name="a_course">所属课程</string>
+    <string name="a_deadline">截止日期</string>
+    <string name="submitway">提交方式</string>
+    <string name="submitornot">是否提交</string>
+    <string name="yes">已经提交</string>
+    <string name="no">还未提交</string>
+    <string name="priority">优先级</string>
+    <string name="add_semester">添加学期</string>
+    <string name="edit_semester">编辑学期信息</string>
+    <string name="list_semester">学期信息</string>
+    <string name="add_assignment">添加作业</string>
+    <string name="remindtime">提醒时间</string>
+    <string name="setAlarm">设置闹铃</string>
+    <string name="delete_assignment">删除作业</string>
+    <string name="view_assignment">查看作业</string>
+    <string name="list_assignment">作业信息</string>
+    
+</resources>

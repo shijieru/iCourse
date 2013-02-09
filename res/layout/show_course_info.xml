@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout1" 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" 
+  android:orientation="vertical" 
+  android:layout_height="fill_parent"
+  android:background="@drawable/background1">
+  <TextView android:id="@+id/showCourseName"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:text="课程名称：" ></TextView>
+  <TextView android:id="@+id/showCourseTeacher"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:text="授课教师：" ></TextView>
+    <TextView android:id="@+id/showCourseSemester"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:text="上课学期：" ></TextView>
+    <TextView android:id="@+id/showCourseInfo"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:text="课程信息：" ></TextView>
+    <Button android:id="@+id/btAddCourseTime"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:text="添加上课信息"></Button>
+    <ListView android:id="@+id/ListCourseTime"
+      android:layout_height="70dip"
+      android:layout_width="fill_parent" />
+    <Button android:id="@+id/btAddCourseAssignment"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:text="添加课程作业"></Button>
+    <ListView android:id="@+id/ListCourseAssignment"
+      android:layout_height="70dip"
+      android:layout_width="fill_parent" />
+    <Button android:layout_height="wrap_content" android:id="@+id/ReturnFromCourseInfo" android:layout_width="fill_parent" android:text="返回" android:layout_gravity="center_horizontal"></Button>
+</LinearLayout>
